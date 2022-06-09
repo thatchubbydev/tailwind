@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>tailwind</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto" >
+        <!-- header and links -->
+        <div class=" p-6 mt-3 flex md:flex-row justify-between items-center space-x-3">
+            <!-- header -->
+                <img class="mt-2" src="./img/logo.svg" alt="">
+            <!-- links -->
+            <div class="flex flex-start hidden items-center space-x-4  md:block" >
+                <a href="#" class="text-darkBlue text-base ">price</a>
+                <a href="#" class="text-darkBlue text-base ">product</a>
+                <a href="#" class="text-darkBlue text-base ">About Us</a>
+                <a href="#" class="text-darkBlue text-base ">careers</a>
+                <a href="#" class="text-darkBlue text-base ">community</a>
+            </div>
+            <!-- button -->
+            <div class="hidden hover:bg-brightRedLight flex justify-center bg-brightRed rounded-full mt-2 p-3 pt-2 px-6  md:block">
+                <a href="#" class="text-white">Get started</a>
+            </div>
+            <!-- hamburger menu  -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>    
+        </div>
+        <div id="menu" class="absolute hidden container mx-auto block flex-col left-50% items-center justify-center bg-white right-50% space-y-4 font-bold text-5sm p-4 md:hidden drop-shadow-md">
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+        </div>
+
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero" class="container mx-auto mt-8 flex flex-col-reverse md:flex-row justify-between items-center">
+        <!-- header and button -->
+        <div class="mb-2 space-x-4 flex flex-col max-w-1/2 space-y-4 md:self-start ">
+            <!-- header -->
+            <h2 class="font-semibold text-5xl text-center md:text-left text-veryDarkBlue max-w-md ">
+                Bring everyone together to build better products 
+            </h2>
+            <!-- paragraph -->
+            <p class=" pt-5 text-5sm text-center md:text-left text-darkBlue max-w-md">
+                manage makes it simple for software designers to manage shit together 
+            </p>
+            <!-- button -->
+            <div class=" pt-5 flex justify-center md:self-start">
+                <a href="#" class="hover:bg-brightRedLight bg-brightRed rounded-full mt-2 p-2 pt-2 text-white">Get started</a>
+            </div>  
+        </div>
+        <div class="max-w-1/2 mb-12 ">
+            <img src="./img/illustration-intro.svg" alt="">
+        </div>
+    </section>
+
+    <!-- hero 2 -->
+    <section class="container mx-auto flex flex-col md:flex-row  items-center justify-center">
+        <!-- header and lists -->
+        <div class="flex md:flex-row flex-col space-x-6 md:space-x-64  ">
+            <!-- header and paragraph -->
+            <div class="pt-12 flex flex-col items-center max-w-md max-w-1/2">
+                <!-- header -->
+                <h4 class="font-semibold text-4xl max-w-md text-center md:text-left">
+                    whats different about manage 
+                </h4>
+                <!-- paragraph -->
+                <p class="pt-12 text-4sm text-darkGrayishBlue text-center md:text-left max-w-md mb-12 md:mb-6">
+                    manage provides all the functionality your team needs,without cmpleity. Our software is tailor made for modern digital product
+                </p>
+            </div>
+            <!-- lists  -->
+            <div class="flex flex-col justify-center space-y-6 items-center container mx-auto  max-w-1/2">
+                <!-- list 1  -->
+                <div class="flex flex-col space-y-2 md:space-y-4 justify-center">
+                    <!-- heading  -->
+                    <div class="flex rounded-l-full space-x-4 bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex text-white rounded-full items-center p-2 px-4 bg-brightRed">
+                            01
+                        </div>
+                        <!-- title smaller screen  -->
+                        <p class="pt-2 text-5sm font-bold text-center md:text-xl ">
+                            Track company wide progress
+                        </p>
+                    </div>
+                    <!-- text: smaller screen  -->
+                    <div class="max-w-md">
+                        <p class="text-5sm text-darkGrayishBlue flex container mx-auto md:px-16 md:block ">
+                            in the brightest day, in the darkest night no eveil shall escape my sight, let those who worship evils might...beware my power green lanterns light.
+                        </p>
+                    </div>
+                </div>
+                <!-- list 2  -->
+                <div class="flex flex-col space-y-2 md:space-y-4 justify-center">
+                    <!-- heading  -->
+                    <div class="flex rounded-l-full space-x-4 bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex text-white rounded-full items-center p-2 px-4 bg-brightRed">
+                            01
+                        </div>
+                        <!-- title smaller screen  -->
+                        <p class="pt-2 text-5sm font-bold text-center md:text-xl ">
+                            Track company wide progress
+                        </p>
+                    </div>
+                    <!-- text: smaller screen  -->
+                    <div class="max-w-md">
+                        <p class="text-5sm text-darkGrayishBlue flex container mx-auto md:px-16 md:block ">
+                            in the brightest day, in the darkest night no eveil shall escape my sight, let those who worship evils might...beware my power green lanterns light.
+                        </p>
+                    </div>
+                </div>
+                <!-- list 3  -->
+                <div class="flex flex-col space-y-2 md:space-y-4 justify-center">
+                    <!-- heading  -->
+                    <div class="flex rounded-l-full space-x-4 bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex text-white rounded-full items-center p-2 px-4 bg-brightRed">
+                            01
+                        </div>
+                        <!-- title smaller screen  -->
+                        <p class="pt-2 text-5sm font-bold text-center md:text-xl ">
+                            Track company wide progress
+                        </p>
+                    </div>
+                    <!-- text: smaller screen  -->
+                    <div class="max-w-md">
+                        <p class="text-5sm text-darkGrayishBlue flex container mx-auto md:px-16 md:block ">
+                            in the brightest day, in the darkest night no eveil shall escape my sight, let those who worship evils might...beware my power green lanterns light.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </section>
+
+    <!-- avatarss section -->
+    <section class="mt-24 container flex flex-col mx-auto  ">
+        <!-- items -->
+        <div class="flex space-y-12 flex-col justify-center items-center items-stretch">
+            <!-- header -->
+            <h2 class="mb-10 font-semibold text-5xl text-center">
+                what's different about manage? 
+            </h2>
+            <!-- cards -->
+            <div class="space-x-4 flex container flex-col mx-auto md:flex-row ">
+                <!-- card 1 -->
+                <div class="flex space-y-2 justify-center items-center flex-col bg-veryLightGray max-w-1/3">
+                    <!-- image -->
+                    <img src="./img/avatar-ali.png" alt="" class="h-12 -mt-8">
+                    <!-- header  -->
+                    <h5 class="text-xl">Anisha Li</h5>
+                    <!-- paragraph  -->
+                    <p class="p-3 text-sm text-darkGrayishBlue text-center ">
+                        in the brightest day, in the darkest night no eveil shall 
+                         my sight, let those who worship evils might...beware my power green lanterns light.
+                    </p>
+
+                </div>
+                <!-- card 2 -->
+                <div class="md:flex hidden space-y-2 justify-center items-center flex-col bg-veryLightGray max-w-1/3 ">
+                    <!-- image -->
+                    <img src="./img/avatar-ali.png" alt="" class="h-12 -mt-8">
+                    <!-- header  -->
+                    <h5 class="text-xl">Professor Xavier</h5>
+                    <!-- paragraph  -->
+                    <p class="p-3 text-sm text-darkGrayishBlue text-center ">
+                        in the brightest day, in the darkest night no eveil shall 
+                         my sight, let those who worship evils might...beware my power green lanterns light.
+                    </p>
+
+                </div>
+                <!-- card 3 -->
+                <div class="md:flex hidden space-y-2 justify-center items-center flex-col bg-veryLightGray max-w-1/3 ">
+                    <!-- image -->
+                    <img src="./img/avatar-ali.png" alt="" class="h-12 -mt-8">
+                    <!-- header  -->
+                    <h5 class="text-xl">Eric Lensherr</h5>
+                    <!-- paragraph  -->
+                    <p class=" p-3 text-sm text-darkGrayishBlue text-center ">
+                        in the brightest day, in the darkest night no eveil shall 
+                         my sight, let those who worship evils might...beware my power green lanterns light.
+                    </p>
+
+                </div>
+                 
+            </div>
+            <div class=" flex pt-5 flex justify-center ">
+                <a href="#" class=" flex hover:bg-brightRedLight bg-brightRed rounded-full mt-2 px-6 p-4 pt-4 text-white">Get started</a>
+            </div> 
+        </div>
+
+    </section>
+
+    <!-- orange container  -->
+    <section id="cta" class = "bg-brightRed  ">
+        <div class="flex container flex-col md:flex-row mx-auto justify-center md:space-x-24 pt-5 mt-10 p-20 md:items-end">
+            <!-- header  -->
+            <h1 class="text-5xl font-bold text-veryLightGray text-center">
+                simplify how your team works today. 
+            </h1>
+            <!-- button  -->
+            <div class=" px-2 pt-5 flex justify-center  ">
+                <a href="#" class=" hover:bg-veryPaleRed bg-veryLightGray rounded-full mt-2 px-6 p-4 pt-4 text-brightRed">Get started</a>
+            </div>
+        </div>
+         
+    </section>
+    <!-- footer  -->
+    <section class = "bg-darkBlue">
+        <footer class=" flex flex-col-reverse container mx-auto justify-center items-center md:flex-row p-6">
+            <!-- logo and icons  -->
+            <div class="flex shrink-0 flex-col-reverse justify-center items-center space-y-6 md:flex-col">
+                <img class="h-8" src="./img/logo-white.svg" alt="">
+                
+                <!-- icons  -->
+                <div class="space-x-4 p-6 flex space-between">
+                    <!-- icon 1  -->
+                    <a href="#"><img class="h-8" src="./img/icon-facebook.svg" alt=""></a>
+                    <!-- icon 2  -->
+                    <a href="#"><img class="h-8" src="./img/icon-instagram.svg" alt=""></a>
+                    <!-- icon 3  -->
+                    <a href="#"><img class="h-8" src="./img/icon-pinterest.svg" alt=""></a>
+                    <!-- icon 4  -->
+                    <a href="#"><img class="h-8" src="./img/icon-twitter.svg" alt=""></a>
+                    <!-- icon 5  -->
+                    <a href="#"><img class="h-8" src="./img/icon-youtube.svg" alt=""></a>    
+                </div>
+                
+            </div>
+            
+            <!-- lists  -->
+            <div class="flex space-around space-x-32">
+                <!-- list 1  -->
+                <div class="flex flex-col space-around space-y-4 p-6">
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-brightRed text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-brightRed text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-brightRed text-white">Products</a></li>
+                        <li><a href="#" class="hover:text-brightRed text-white">About</a></li> 
+                     </ul>
+                </div>
+                <!-- list 2  -->
+                <div class="flex flex-col space-around space-y-2 p-6">
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-brightRed text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-brightRed text-white">Community</a></li>
+                        <li><a href="#" class="hover:text-brightRed text-white">Privacy Policy</a></li>
+                        
+                     </ul>
+                </div>
+
+                
+            </div>
+            <!-- input and button  -->
+            <div class="flex space-x-3 container mx-auto flex-col">
+                <form action="#">
+                    <div class="flex ">
+                        <input type="text" placeholder="type here" class="px-12 m-3 p-3 rounded-full text-darkGrayishBlue">
+                        <a href="#" class="rounded-full px-5 my-2 bg-brightRed text-veryPaleRed text-center p-4">GO</a>
+                        
+                    </div>
+                    <div class="flex ">
+                        <p class="text-3sm text-white p-3 md:block hidden">Copyright &copy; 2022. All rights reserved</p>
+                    </div>
+                        
+                        
+                </form>
+            </div>
+            
+            
+            
+            <!-- links -->
+
+        </footer>
+        <div class="flex justify-center">
+            <p class="text-3sm text-white p-3 md:hidden">Copyright &copy; 2022. All rights reserved</p>
+        </div>
+        
+    </section>
+ <script src="./js/script.js"></script>
+</body>
+</html>
